@@ -1,0 +1,16 @@
+div.playPauseMenu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  width: 555px;
+  height: 135px;
+  z-index: 999;
+  border-radius: 15px;
+  /* backdrop-filter: blur(10px); */
+  display: none;
+  background-color: #0d0d0d;
+}
+/* 
+div.playPauseMenu {
+} */
