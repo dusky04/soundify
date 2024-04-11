@@ -1,5 +1,5 @@
 section {
-  /* position: relative; */
+  position: relative;
   display: flex;
   /* background-color: black; */
   gap: 10px;

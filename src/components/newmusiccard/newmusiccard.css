@@ -1,0 +1,30 @@
+div.newMusicCard {
+  width: 30vw;
+  display: flex;
+  gap: 10px;
+  border-radius: 15px;
+  background-color: rgb(13, 13, 13);
+
+  img.newMusicAlbumArt {
+    width: 110px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  div.newMusicInfo {
+    margin: auto;
+    padding: 10px;
+    width: calc(30vw - 110px);
+
+    p#newSongArtistName {
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    p#newSongName {
+      font-weight: 600;
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+div.backForwardButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 5vw;
+  height: 20vh;
+  background-color: rgb(13, 13, 13);
+  border-radius: 25px;
+  gap: 15px;
+
+  i {
+    font-size: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+}
