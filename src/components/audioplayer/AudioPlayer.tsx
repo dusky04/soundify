@@ -1,11 +1,13 @@
 import "./audioplayer.css";
 import "../../assets/fonts.css";
+// import "../waveform/WaveForm.js";
 // import PlayPauseMenu from "../playpausemenu/PlayPauseMenu";
 
 const AudioPlayer = () => {
   return (
     <div className="audioPlayer">
       {/* <PlayPauseMenu /> */}
+      {/* <div className="audioWaveform"></div> */}
       <div className="audioPlayerAlbumArt"></div>
       <div className="audioPlayerWrapper">
         <div className="audioPlayerInfoCard">
@@ -29,7 +31,10 @@ const AudioPlayer = () => {
             </div>
           </div>
         </div>
-        <div className="audioPlayerSongDuration">duration</div>
+        <div className="audioPlayerSongDuration">
+          <p id="startDuration">0:00</p>
+          <p id="endDuration">{}</p>
+        </div>
       </div>
     </div>
   );
