@@ -5,14 +5,14 @@ import WaveForm from "./components/waveform/WaveForm.tsx";
 function App() {
   return (
     <>
-      {/* <AudioPlayer
+      <AudioPlayer
         songName="Luna Nova"
         artistName="Eternal Embrace"
         artistTag="LUN"
         songTag="#Metalcore"
-      /> */}
+      />
 
-      <WaveForm />
+      {/* <WaveForm /> */}
     </>
   );
 }

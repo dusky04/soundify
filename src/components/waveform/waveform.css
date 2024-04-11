@@ -1,18 +1,21 @@
 div.waveForm {
-  margin-top: 200px;
-  margin-left: 400px;
+  z-index: 999;
+  padding: 10px 5px 5px 5px;
+  /* position: absolute; */
+  /* margin-top: 200px; */
+  /* margin-left: 400px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: transparent;
   width: 555px;
   height: 135px;
-  transform: scale(1.1);
-  overflow: hidden;
+  /* transform: scale(1.1); */
+  /* overflow: hidden; */
   border-radius: 15px;
-}
 
-div.wavesurfer {
-  width: 555px;
-  height: 135px;
+  div.wavesurfer {
+    width: 555px;
+    height: 135px;
+  }
 }
