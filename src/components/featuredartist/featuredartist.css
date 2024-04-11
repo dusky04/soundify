@@ -1,0 +1,39 @@
+div.featuredArtist {
+  width: 46vw;
+  height: 20vh;
+  background-color: red;
+  border-radius: 15px;
+  background: url("../../assets/featured_artist.jpg");
+  background-size: 100%;
+  /* object-fit: cover; */
+  background-position: -100%, -bottom;
+  overflow: hidden;
+
+  div.sus {
+    padding: 5px;
+    backdrop-filter: brightness(60%);
+    width: 46vw;
+    height: 20vh;
+  }
+
+  p {
+    text-align: left;
+    padding-left: 2vw;
+    backdrop-filter: brightness(60%);
+    line-height: 45px;
+  }
+  p:nth-child(1) {
+    padding-top: 1px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  p:nth-child(2) {
+    padding-top: 0;
+    font-size: 50px;
+    font-weight: 600;
+  }
+}

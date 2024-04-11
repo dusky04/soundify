@@ -1,0 +1,26 @@
+div.navBarWrapper {
+  width: 46vw;
+  height: 5vh;
+  display: flex;
+  padding-left: 1vw;
+
+  a.navBarLinks {
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 2px 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  a.navBarLinks:hover {
+    background-color: white;
+    color: black;
+  }
+
+  div.gridIcon {
+    cursor: pointer;
+    margin-left: 20vh;
+  }
+}

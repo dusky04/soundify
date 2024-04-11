@@ -1,21 +1,18 @@
 import "./audioplayer.css";
 import "../../assets/fonts.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import WaveForm from "../waveform/WaveForm.tsx";
-// import { useState } from "react";
+import type { song } from "../../utilities/types.ts";
 
-// AudioPlayer Props
-type audioPlayerProps = {
-  songName: string;
-  artistName: string;
-  artistTag: string;
-  songTag: string;
-};
-
-const AudioPlayer = (props: audioPlayerProps) => {
+const AudioPlayer = (props: song) => {
   const [playSong, setPlaySong] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  const AudioPlayerWrapper = (props: audioPlayerProps) => (
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  const AudioPlayerWrapper = (props: song) => (
     <div
       className="audioPlayerWrapper"
       style={{ display: playSong ? "none" : "flex" }}
@@ -23,8 +20,8 @@ const AudioPlayer = (props: audioPlayerProps) => {
       <div className="audioPlayerInfoCard">
         <div className="audioPlayerSongInfo">
           <div className="audioPlayerSong">
-            <p className="artist">{props.songName}</p>
-            <p className="songName">{props.artistName}</p>
+            <p className="artist">{props.artistName}</p>
+            <p className="songName">{props.songName}</p>
           </div>
           <div className="audioPlayerButtons">
             <div className="repostButton">
@@ -50,24 +47,35 @@ const AudioPlayer = (props: audioPlayerProps) => {
       </div>
     </div>
   );
-
-  return (
+  return isLoaded ? (
     <>
-      <div className="audioPlayer">
-        <div className="audioPlayerAlbumArt"></div>
-        {playSong ? (
-          <WaveForm />
-        ) : (
-          <AudioPlayerWrapper
-            songName="Luna Nova"
-            artistName="Eternal Embrace"
-            artistTag="LUN"
-            songTag="#Metalcore"
-          />
-        )}
-      </div>
+      <section>
+        <img src={props.albumArtPath.split("_blur")[0] + ".jpg"} alt="" />
+
+        <div className="audioPlayer">
+          <div
+            className="audioPlayerAlbumArt"
+            // style={{ background: `url("${props.albumArtPath}")` }}
+            style={{
+              backgroundImage: `url(${props.albumArtPath}`,
+            }}
+          ></div>
+          {playSong ? (
+            <WaveForm />
+          ) : (
+            <AudioPlayerWrapper
+              key={props.artistName}
+              songName={props.songName}
+              artistName={props.artistName}
+              artistTag={props.artistTag}
+              songTag={props.songTag}
+              albumArtPath={props.albumArtPath}
+            />
+          )}
+        </div>
+      </section>
     </>
-  );
+  ) : null;
 };
 
 export default AudioPlayer;

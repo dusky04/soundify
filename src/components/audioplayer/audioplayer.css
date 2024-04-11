@@ -1,152 +1,172 @@
-div.audioPlayer {
-  padding-top: 200px;
-  padding-left: 400px;
-  width: 555px;
-  height: 135px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  transform: scale(1.1);
-  overflow: hidden;
+section {
   /* position: relative; */
+  display: flex;
+  /* background-color: black; */
+  gap: 10px;
+  width: calc(550px + 150px);
+  height: 135px;
+  /* transform: scale(1.1); */
 
-  div.audioPlayerAlbumArt {
-    position: absolute;
-    width: 555px;
+  img {
+    width: 150px;
     height: 135px;
-    background: url("../../assets/albumarts/image.jpg");
-    background-size: 100%;
-    background-position: -100%, -100%;
+
+    object-fit: cover;
     border-radius: 15px;
   }
-
-  div.audioPlayerWrapper {
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
+  .audioPlayer {
+    background-color: transparent;
+    /* padding-top: 200px;
+    padding-left: 400px; */
     width: 555px;
+    height: 135px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    /* transform: scale(1.1); */
+    overflow: hidden;
+    /* position: relative; */
 
-    div.audioPlayerInfoCard {
+    div.audioPlayerAlbumArt {
+      position: absolute;
+      width: 555px;
+      height: 135px;
+      /* background: url("../../assets/albumarts/albumart1_blur.jpg"); */
+      background-size: 100%;
+      background-position: -100%, -100%;
       border-radius: 15px;
+    }
+
+    div.audioPlayerWrapper {
       display: flex;
       flex-direction: column;
-      position: relative;
+      border-radius: 15px;
+      width: 555px;
+      background-color: transparent;
 
-      height: 90px;
-
-      div.audioPlayerSongInfo {
+      div.audioPlayerInfoCard {
+        background-color: transparent;
+        border-radius: 15px;
         display: flex;
+        flex-direction: column;
+        position: relative;
 
-        div.audioPlayerSong {
-          flex: 6;
+        height: 90px;
+
+        div.audioPlayerSongInfo {
           display: flex;
-          flex-direction: column;
-          padding: 20px;
 
-          p.artist {
-            font-weight: 500;
-            font-size: 15px;
+          div.audioPlayerSong {
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            p.artist {
+              font-weight: 500;
+              font-size: 15px;
+            }
+
+            p.songName {
+              font-weight: 600;
+              font-size: 30px;
+            }
           }
 
-          p.songName {
-            font-weight: 600;
-            font-size: 30px;
-          }
-        }
-
-        div.audioPlayerButtons {
-          cursor: pointer;
-          padding: 20px;
-          flex: 1;
-          display: flex;
-          flex-direction: row;
-          gap: 5px;
-
-          div.repostButton {
+          div.audioPlayerButtons {
+            cursor: pointer;
+            padding: 20px;
+            flex: 1;
             display: flex;
             flex-direction: row;
-            font-size: 10px;
-            align-items: baseline;
             gap: 5px;
 
-            div.artistCode {
+            div.repostButton {
               display: flex;
-              align-items: center;
-              justify-content: center;
+              flex-direction: row;
+              font-size: 10px;
+              align-items: baseline;
+              gap: 5px;
 
-              p {
-                text-align: center;
-                padding-top: 1px;
-                padding-bottom: 1px;
-                padding-left: 4px;
-                padding-right: 4px;
-                font-size: 10px;
-                font-weight: 500;
-                border-radius: 5px;
-                border: 0.5px solid white;
-                text-transform: uppercase;
+              div.artistCode {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                  text-align: center;
+                  padding-top: 1px;
+                  padding-bottom: 1px;
+                  padding-left: 4px;
+                  padding-right: 4px;
+                  font-size: 10px;
+                  font-weight: 500;
+                  border-radius: 5px;
+                  border: 0.5px solid white;
+                  text-transform: uppercase;
+                }
               }
             }
           }
-        }
 
-        div.audioPlayerTags {
-          padding: 20px 20px 20px 0px;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
+          div.audioPlayerTags {
+            padding: 20px 20px 20px 0px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
 
-          line-height: 10px;
+            line-height: 10px;
 
-          p#album {
-            font-size: 10px;
+            p#album {
+              font-size: 10px;
+            }
+
+            p#tag {
+              font-size: 12px;
+              font-weight: 500;
+            }
           }
+        }
+      }
 
-          p#tag {
-            font-size: 12px;
-            font-weight: 500;
+      div.audioPlayerSongDuration {
+        padding: 10px 20px 0px 20px;
+        height: 50px;
+        z-index: 1;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          border-radius: 50%;
+          width: 10px;
+          cursor: pointer;
+
+          i.startDuration {
+            padding-bottom: 30px;
+
+            font-size: 15px;
           }
         }
-      }
-    }
 
-    div.audioPlayerSongDuration {
-      padding: 10px 20px 0px 20px;
-      height: 50px;
-      z-index: 1;
-      border-radius: 15px;
-      display: flex;
-      justify-content: space-between;
-
-      button {
-        background-color: transparent;
-        border: none;
-        color: white;
-        border-radius: 50%;
-        width: 10px;
-        cursor: pointer;
-
-        i.startDuration {
-          padding-bottom: 30px;
-
-          font-size: 15px;
+        hr {
+          margin-top: 8px;
+          width: 450px;
+          height: 0.01em;
+          border: 1px solid #d4d5d6;
         }
-      }
 
-      hr {
-        margin-top: 8px;
-        width: 450px;
-        height: 0.01em;
-        border: 1px solid #d4d5d6;
-      }
-
-      p#endDuration {
-        justify-self: flex-end;
-        font-size: 12px;
+        p#endDuration {
+          justify-self: flex-end;
+          font-size: 12px;
+        }
       }
     }
   }
-}
 
-/* div.audioPlayerWrapper:hover {
+  /* div.audioPlayerWrapper:hover {
   filter: blur(10px);
 } */
+}

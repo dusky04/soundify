@@ -8,11 +8,14 @@ div.waveForm {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  width: 555px;
+  width: 600px;
   height: 135px;
   /* transform: scale(1.1); */
   /* overflow: hidden; */
   border-radius: 15px;
+  /* background-color: black; */
+  z-index: 9999;
+  backdrop-filter: brightness(60%);
 
   div.wavesurfer {
     width: 555px;

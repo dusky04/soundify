@@ -1,0 +1,44 @@
+div.searchBarContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+  div.searchBarWrapper {
+    background-color: #0d0d0d;
+    border-radius: 25px;
+
+    i {
+      color: white;
+      padding-left: 15px;
+      padding-right: 10px;
+    }
+
+    input.searchBar {
+      color: white;
+      border: none;
+      width: 40vw;
+      height: 6vh;
+      font-size: 15px;
+      background-color: #0d0d0d;
+      border-radius: 25px;
+    }
+
+    .searchBar:focus {
+      outline: none;
+
+      /* background-color: aqua; */
+    }
+
+    input.searchBar::placeholder {
+      /* color: red; */
+    }
+  }
+
+  img.profilePhoto {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 6vh;
+    width: 3vw;
+    margin-right: 10px;
+  }
+}
