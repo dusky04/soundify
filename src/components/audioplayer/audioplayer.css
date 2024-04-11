@@ -13,7 +13,6 @@ div.audioPlayer {
     width: 555px;
     height: 135px;
     background: url("../../assets/albumarts/image.jpg");
-    /* filter: blur(5px); */
     background-size: 100%;
     background-position: -100%, -100%;
     border-radius: 15px;
@@ -114,6 +113,35 @@ div.audioPlayer {
       height: 50px;
       z-index: 1;
       border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        border-radius: 50%;
+        width: 10px;
+        cursor: pointer;
+
+        i.startDuration {
+          padding-bottom: 30px;
+
+          font-size: 15px;
+        }
+      }
+
+      hr {
+        margin-top: 8px;
+        width: 450px;
+        height: 0.01em;
+        border: 1px solid #d4d5d6;
+      }
+
+      p#endDuration {
+        justify-self: flex-end;
+        font-size: 12px;
+      }
     }
   }
 }
