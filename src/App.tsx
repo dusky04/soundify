@@ -7,25 +7,26 @@ import NavBar from "./components/navbar/NavBar.tsx";
 import NewMusicCard from "./components/newmusiccard/NewMusicCard.tsx";
 import SearchBar from "./components/searchbar/SearchBar.tsx";
 import SideBar from "./components/sidebar/SideBar.tsx";
+import LoginPage from "./pages/loginPage/LoginPage.tsx";
 
 function App() {
   return (
-    <>
-      <BottomPlayer />
-      <main>
-        <section className="leftSection">
-          <Logo />
-          <SideBar />
-          {/* <NewMusicCard /> */}
-        </section>
-        <section className="rightSection">
-          <SearchBar />
-          <FeaturedArtist />
-          <NavBar />
-          <SongCardDisplayer />
-        </section>
-      </main>
-    </>
+    <LoginPage />
+    // <>
+    //   <BottomPlayer />
+    //   <main>
+    //     <section className="leftSection">
+    //       <Logo />
+    //       <SideBar />
+    //     </section>
+    //     <section className="rightSection">
+    //       <SearchBar />
+    //       <FeaturedArtist />
+    //       <NavBar />
+    //       <SongCardDisplayer />
+    //     </section>
+    //   </main>
+    // </>
   );
 }
 
