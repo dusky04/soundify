@@ -21,10 +21,11 @@ export default function WaveForm() {
   };
 
   return (
-    <div className="waveForm">
+    // <div className="waveForm">
+    <div className="bottomPlayerWaveForm">
       <div className="wavesurfer">
         <WavesurferPlayer
-          barWidth={150}
+          barWidth={110}
           height={110}
           waveColor="#ffffff"
           progressColor={"#B63636"}

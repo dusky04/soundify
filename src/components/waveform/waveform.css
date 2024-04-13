@@ -1,6 +1,6 @@
 div.waveForm {
   z-index: 999;
-  padding: 10px 5px 5px 5px;
+  padding: 5px;
   /* position: absolute; */
   /* margin-top: 200px; */
   /* margin-left: 400px; */
@@ -8,7 +8,7 @@ div.waveForm {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  width: 600px;
+  width: 545px;
   height: 135px;
   /* transform: scale(1.1); */
   /* overflow: hidden; */
@@ -21,4 +21,11 @@ div.waveForm {
     width: 555px;
     height: 135px;
   }
+}
+
+div.bottomPlayerWaveForm {
+  /* padding-top: 1px; */
+  width: 80%;
+  overflow: hidden;
+  height: 100%;
 }

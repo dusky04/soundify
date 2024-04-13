@@ -1,13 +1,17 @@
 import "./newmusiccard.css";
-import img from "../../assets/albumarts/albumart6.jpg";
+import type { song } from "../../utilities/types";
 
-export default function NewMusicCard() {
+export default function NewMusicCard(props: song) {
   return (
     <div className="newMusicCard">
-      <img src={img} alt="" className="newMusicAlbumArt" />
+      <img
+        src={props.albumArtPath.split("_blur")[0] + ".jpg"}
+        alt=""
+        className="newMusicAlbumArt"
+      />
       <div className="newMusicInfo">
-        <p id="newSongArtistName">Metallica</p>
-        <p id="newSongName">Shadows Follow</p>
+        <p id="newSongArtistName">{props.artistName}</p>
+        <p id="newSongName">{props.songName}</p>
       </div>
     </div>
   );

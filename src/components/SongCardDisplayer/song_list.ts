@@ -2,12 +2,13 @@ import type { song } from "../../utilities/types";
 
 const songList: song[] = [
   {
-    songName: "Eternal Embrace",
-    artistName: "Luna Nova",
-    artistTag: "LUN",
-    songTag: "#Metalcore",
-    albumArtPath: "/src/assets/albumarts/albumart1_blur.jpg",
+    songName: "Neon Dreams",
+    artistName: "Cyberpulse",
+    artistTag: "CBP",
+    songTag: "#Synthwave",
+    albumArtPath: "/src/assets/albumarts/albumart5_blur.jpg",
   },
+
   {
     songName: "Ethereal Serenade",
     artistName: "Nova Wave",
@@ -30,11 +31,11 @@ const songList: song[] = [
     albumArtPath: "/src/assets/albumarts/albumart4_blur.jpg",
   },
   {
-    songName: "Neon Dreams",
-    artistName: "Cyberpulse",
-    artistTag: "CBP",
-    songTag: "#Synthwave",
-    albumArtPath: "/src/assets/albumarts/albumart5_blur.jpg",
+    songName: "Eternal Embrace",
+    artistName: "Luna Nova",
+    artistTag: "LUN",
+    songTag: "#Metalcore",
+    albumArtPath: "/src/assets/albumarts/albumart1_blur.jpg",
   },
 ];
 
