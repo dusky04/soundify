@@ -7,7 +7,7 @@ import NavBar from "./components/navbar/NavBar.tsx";
 import NewMusicCard from "./components/newmusiccard/NewMusicCard.tsx";
 import SearchBar from "./components/searchbar/SearchBar.tsx";
 import SideBar from "./components/sidebar/SideBar.tsx";
-import LoginPage from "./pages/loginPage/LoginPage.tsx";
+import LoginPage from "./routes/loginPage/LoginPage.tsx";
 
 function App() {
   return (

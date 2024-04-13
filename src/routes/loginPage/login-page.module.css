@@ -1,5 +1,8 @@
-main {
-  overflow: hidden;
+main.LoginPage {
+  /* overflow: hidden; */
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 
   p#sounding {
     margin: 5vh;
@@ -9,29 +12,33 @@ main {
     font-weight: 800;
   }
 
-  video.login-page-sidebar-video {
-    width: 30%;
+  p#tagLine {
+    font-size: 25px;
+    margin: 15vh 5vh;
+    z-index: 999;
+    position: absolute;
+    font-weight: 600;
+    font-style: italic;
+    /* text-decoration: ; */
+  }
+
+  video.loginPageSidebarVideo {
+    width: 65%;
     height: 100%;
     object-fit: cover;
   }
 
-  img.login-page-sidebar-image {
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  section.login-page-content {
+  section.loginPageContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     width: 70%;
     height: 100%;
-    background-color: #202124;
+    background-color: rgb(12, 12, 12);
     gap: 5px;
 
-    .login-with-google-btn {
+    /* button.loginWithGoogleBtn {
       margin: 0 auto;
       border-radius: 15px;
       height: 6vh;
@@ -77,6 +84,37 @@ main {
       }
     }
 
+    .loginDivider {
+      margin: 0 auto;
+      width: 25vw;
+      line-height: 1em;
+      position: relative;
+      outline: 0;
+      border: 0;
+      text-align: center;
+      height: 1.5em;
+      opacity: 0.5;
+
+      &:before {
+        content: "";
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+      }
+      &:after {
+        content: attr(data-content);
+        color: white;
+        position: relative;
+        display: inline-block;
+        padding: 0 0.5em;
+        line-height: 1.5em;
+        background-color: #202124;
+      }
+    }
+
     h2.login {
       font-family: "Poppins", sans-serif;
       width: 25vw;
@@ -95,14 +133,13 @@ main {
     form {
       width: 25vw;
       margin: 0 auto;
-      /* ve<input type="checkbox" name="" id="" />rtical-align: baseline; */
       label {
         display: inline-block;
         font-size: 18px;
         margin-bottom: 5px;
         font-weight: 600;
       }
-      input.login-page-input-box {
+      input.loginPageInputBox {
         font-family: "Poppins", sans-serif;
         border-radius: 10px;
         margin-bottom: 15px;
@@ -113,14 +150,12 @@ main {
         background-color: white;
         border: none;
         padding: 0 10px;
-        /* padding: 0 10px; */
-        /* justify-self: center; */
       }
-      input.login-page-input-box:focus {
+      input.loginPageInputBox:focus {
         outline: none;
       }
 
-      button.login-button {
+      button.loginButton {
         margin-top: 10px;
         border-radius: 15px;
         height: 6vh;
@@ -134,9 +169,8 @@ main {
         transition: background-color 1s;
       }
 
-      button.login-button:hover {
+      button.loginButton:hover {
         background-color: #adadad;
-        /* color: #adadad; */
       }
 
       a {
@@ -145,44 +179,20 @@ main {
       }
     }
 
-    p#sign-up-redirect-button {
+    p#signUpRedirectButton {
       font-size: 15px;
       text-align: center;
-
-      a {
-        margin-left: 2px;
-      }
+      text-wrap: nowrap;
     }
+
+    a#signUpRedirectLink {
+      font-size: 15px;
+      text-align: center;
+    
+  } */
   }
 }
 
-.hr-text {
-  margin: 0 auto;
-  width: 25vw;
-  line-height: 1em;
-  position: relative;
-  outline: 0;
-  border: 0;
-  text-align: center;
-  height: 1.5em;
-  opacity: 0.5;
-
-  &:before {
-    content: "";
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 1px;
-  }
-  &:after {
-    content: attr(data-content);
-    color: white;
-    position: relative;
-    display: inline-block;
-    padding: 0 0.5em;
-    line-height: 1.5em;
-    background-color: #202124;
-  }
+main.LoginPage::-webkit-scrollbar {
+  display: none;
 }
