@@ -20,6 +20,7 @@ export default function LoginPage(): JSX.Element {
 
       <section className={loginPageStyles.loginPageContent}>
         <Register />
+        {/* <Login /> */}
       </section>
     </main>
   );

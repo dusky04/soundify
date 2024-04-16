@@ -101,30 +101,35 @@ section.registerSection {
     width: 25vw;
     margin: 0 auto;
 
-    div {
+    div.nameAndUserNameContainer {
       width: 25vw;
-      label.nameLabel,
-      label.userNameLabel {
-        display: "inline-block";
-        font-size: 20px;
-      }
+      display: flex;
+      padding-bottom: 10px;
 
-      label.userNameLabel {
-        margin-left: 10vw;
-      }
-
-      input.nameInputBox,
-      input.userNameInputBox {
-        height: 5vh;
+      fieldset {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
         border: none;
-        width: 40%;
-        border-radius: 10px;
-      }
+        width: 15vw;
 
-      input.userNameInputBox {
-        margin-left: 5vw;
+        input.nameInputBox,
+        input.userNameInputBox {
+          align-self: flex-end;
+          width: 85%;
+          font-size: 20px;
+          color: black;
+          padding: 0 10px;
+          height: 5vh;
+          border-radius: 10px;
+          border: none;
+        }
+        input.nameInputBox {
+          align-self: flex-start;
+        }
       }
     }
+
     label {
       display: inline-block;
       font-size: 18px;
@@ -167,15 +172,19 @@ section.registerSection {
     }
 
     a {
+      /* margin-left: auto; */
       font-size: 18px;
-      margin-left: 22vh;
+      /* margin-left: 22vh; */
+
+      /* text-align: left; */
     }
   }
 
   p#signInRedirectButton {
     font-size: 15px;
+    text-align: center;
     /* margin: 0 auto; */
-    text-wrap: nowrap;
+    text-wrap: wrap;
     /* margin-left: 100px; */
   }
 
